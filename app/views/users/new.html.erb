@@ -1,18 +1,19 @@
 <h1>Create a new user</h1>
 
-<form method="post" action="/users"vaccept-charset="UTF-8">
-    <input type="hidden" name="authenticity_token" value="form_authenticity_token">
-    
-    <label for="user_username">User Name: </label>
-    <input type="text" id="user_username" name="user[username]" >
+<form method="post" action="/users" accept-charset="UTF-8">
+
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" >
+
+    <label for="user_username">Name:  </label>
+    <input type="text" name="user[username]" id="user_username">
     <br>
 
     <label for="user_email">Email: </label>
-    <input type="text" id="user_email" name="user[email]" >
+    <input type="text" name="user[email]" id="user_email">
     <br>
 
     <label for="user_password">Password: </label>
-    <input type="password" id="user_password" name="user[password]">
+    <input type="password" name="user[password]" id="user_password">
     <br>
 
     <input type="submit">

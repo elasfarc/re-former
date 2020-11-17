@@ -1,4 +1,6 @@
-<h1>Create a new user</h1>
+<%
+=begin%>
+ <h1>Create a new user</h1>
 
 <form method="post" action="/users" accept-charset="UTF-8">
 
@@ -17,4 +19,25 @@
     <br>
 
     <input type="submit">
-</form>
+</form> 
+<%
+=end%>
+
+<h2> Create a new user form_tag </h2>
+
+<%= form_tag('/users', method: :post) do %>
+
+    <%= label_tag ('Name: ') %>
+    <%= text_field_tag ('username')%>
+    <br>
+
+    <%= label_tag('Email: ') %>
+    <%= text_field_tag (:email) %>
+    <br>
+
+    <%= label_tag('Password: ') %>
+    <%= password_field_tag (:password) %>
+    <br>
+
+    <%= submit_tag('Create') %>
+<% end %>

@@ -1,9 +1,5 @@
-
-
 # Re-Former
-
 Simple form created using Rails. It takes the username, password, and email and it shows the error messages if the inputs do not match the validations (Create new users & Edit)
-
 
 ## Built With
 - Ruby programming language

@@ -1,3 +1,8 @@
+# rubocop:disable Metrics/CyclomaticComplexity
+# rubocop:disable Metrics/MethodLength
+# rubocop:disable Metrics/PerceivedComplexity
+# rubocop:disable Layout/LineLength
+
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
@@ -7,6 +12,9 @@
 # The application 'bundle' is installed as part of a gem, and
 # this file is here to facilitate running it.
 #
+
+
+
 
 require 'rubygems'
 
@@ -116,3 +124,8 @@ end
 m.load_bundler!
 
 load Gem.bin_path('bundler', 'bundle') if m.invoked_as_script?
+
+# rubocop:enable Metrics/CyclomaticComplexity
+# rubocop:enable Metrics/MethodLength
+# rubocop:enable Metrics/PerceivedComplexity
+# rubocop:enable Layout/LineLength

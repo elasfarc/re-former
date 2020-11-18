@@ -2,8 +2,7 @@
 
 # Re-Former
 
-The Microverse Forms and Authentication, Bare Metal Forms and Helpers project for Ruby on Rails that consists of build some forms, both using nearly-pure HTML and then graduating to using the helper methods that Rails provides.
-Simple form created using Rails. It takes the username, password, and email and it shows the error messages if the inputs do not match the validations (Create new users & Edit already ex)
+Simple form created using Rails. It takes the username, password, and email and it shows the error messages if the inputs do not match the validations (Create new users & Edit)
 
 
 ## Built With
@@ -15,7 +14,6 @@ Simple form created using Rails. It takes the username, password, and email and 
 
 ## Author
 - 👤GitHub: [Mohammed Al-Asfar](https://github.com/elasfarc)
-
 
 
 ## Getting Started
@@ -61,10 +59,6 @@ To download rubocop and run the tests on your local environment, this are the co
 - cd re-former
 - copy this file [.rubocop.yml](https://github.com/microverseinc/linters-config/blob/master/ruby/.rubocop.yml) in the root directory of the project
 - type in the terminal 'rubocop'
-
-
-### Acknowledgments
-Appreciate the Ruby Team, and a special acknowledgment to Microverse for pushing us further to increase our knowledge.
 
 
 ## 📝 License

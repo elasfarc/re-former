@@ -5,12 +5,10 @@ class UsersController < ApplicationController
   end
 
   def create
-    # @user = User.new(username: params[:user_name], email: params[:email], password: params[:password])
     @user = User.new(user_params)
     if @user.save
       redirect_to new_user_path
     else
-      p '====ooooo======'
       render :new
     end
   end
@@ -25,7 +23,6 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to @user
     else
-      p '====ooooo======'
       render :edit
     end
   end

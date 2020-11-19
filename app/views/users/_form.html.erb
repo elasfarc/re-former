@@ -11,7 +11,7 @@
     <%= f.text_field(:username, placeholder:'enter name here') %>
     <br>
     <%= label(:user, :email, 'Email: ')%>
-    <%= f.text_field(:email, placeholder:'example@example.com') %>
+    <%= f.email_field(:email, placeholder:'example@example.com') %>
     <br>
     <%= label(:user, :password, 'Password: ' )%>
     <%= f.password_field(:password)%>
